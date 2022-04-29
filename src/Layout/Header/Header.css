@@ -32,6 +32,7 @@ header#Header nav .nav_list a,
 header#Header nav .nav_list button {
   color: #fff;
   text-decoration: none;
+  font-family: "League Spartan", sans-serif;
 }
 
 header#Header nav .nav_list .connect_btn {
@@ -42,5 +43,6 @@ header#Header nav .nav_list .connect_btn {
   display: inline-block;
   background: transparent;
   cursor: pointer;
+  font-family: "Poppins", sans-serif;
 }
 /*# sourceMappingURL=Header.css.map */

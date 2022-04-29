@@ -41,4 +41,13 @@ ol {
   margin: 0;
   padding: 0;
 }
+h2.section_title {
+  font-size: 33px;
+}
+p.para {
+  font-size: 13px;
+  &.para_top {
+    margin-top: 52px;
+  }
+}
 // ............................Global Settings ....................End
