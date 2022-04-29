@@ -35,4 +35,59 @@
   margin-bottom: 12px;
   font-family: "Poppins", sans-serif;
 }
+
+#Homepage #Section3 {
+  margin-top: 61px;
+}
+
+#Homepage #Section3 .custom_card {
+  padding: 28px 25px;
+  border-radius: 8.04px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#Homepage #Section3 .custom_card:hover {
+  background: #b6b6b6;
+}
+
+#Homepage #Section3 .custom_card:hover .card_para {
+  color: #e2e2e2 !important;
+}
+
+#Homepage #Section3 .custom_card .card_body .card_para {
+  color: #acaba9;
+  font-size: 9.46px;
+}
+
+#Homepage #Section5 {
+  padding-top: 118px;
+  padding-bottom: 100px;
+}
+
+#Homepage #Section5 .section_wrapper {
+  background: url("../../Static/img/discount_bg.png") center/100% 100% no-repeat;
+  min-height: 256.21px;
+  position: relative;
+}
+
+#Homepage #Section5 .section_wrapper .subscribe_btn {
+  position: absolute;
+  right: 20px;
+  top: -10px;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+#Homepage #Section5 .section_wrapper .section_content {
+  padding: 40px 20px;
+}
+
+#Homepage #Section5 .section_wrapper .section_content .para_section {
+  color: #d9d9d9;
+  font-size: 11px;
+}
 /*# sourceMappingURL=Homepage.css.map */

@@ -5,6 +5,10 @@ function Homepage(props) {
     <div id="Homepage">
       <Section1></Section1>
       <Section2></Section2>
+      <Section3></Section3>
+      <Section4></Section4>
+
+      <Section5></Section5>
     </div>
   );
 }
@@ -25,7 +29,10 @@ const Section1 = () => {
               </p>
               <div className="btn_control d-flex align-items-center">
                 <button className="btn btn-light">Create a contract</button>
-                <button data-mdb-ripple-duration="0" className="watch_btn btn btn-muted shadow-0  text-white">
+                <button
+                  data-mdb-ripple-duration="0"
+                  className="watch_btn btn btn-muted shadow-0  text-white"
+                >
                   <span className="watch_box rounded-circle me-2">
                     <i className="fab fa-youtube    text-danger"></i>
                   </span>{" "}
@@ -76,6 +83,150 @@ const Section2 = () => {
 
               <div className="btn_control mt-4">
                 <button className="btn btn-light">Withdraw</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const Section3 = () => {
+  return (
+    <section id="Section3">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-12 text-center">
+            <h4 className="section_subtitle">SERVICES</h4>
+            <h2 className="section_title">We Offer Best Services</h2>
+          </div>
+        </div>
+
+        <div className="row gx-0 gy-3 mt-2">
+          <div className="col-sm-6 col-md-4 col-lg-3">
+            <div className="col_wrapper">
+              <div className="custom_card text-center">
+                <div className="card_head text-center">
+                  <img
+                    src={require("../../Static/img/satisfaction.png")}
+                    alt="img"
+                  />
+                  <h4 className="section_subtitle text-white my-3">Hair cut</h4>
+                </div>
+                <div className="card_body">
+                  <p className="card_para">
+                    Engrossed listening. Park gate sell they west hard for the.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-sm-6 col-md-4 col-lg-3">
+            <div className="col_wrapper">
+              <div className="custom_card text-center">
+                <div className="card_head text-center">
+                  <img
+                    src={require("../../Static/img/satisfaction.png")}
+                    alt="img"
+                  />
+                  <h4 className="section_subtitle text-white my-3">Hair cut</h4>
+                </div>
+                <div className="card_body">
+                  <p className="card_para">
+                    Engrossed listening. Park gate sell they west hard for the.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-sm-6 col-md-4 col-lg-3">
+            <div className="col_wrapper">
+              <div className="custom_card text-center">
+                <div className="card_head text-center">
+                  <img
+                    src={require("../../Static/img/satisfaction.png")}
+                    alt="img"
+                  />
+                  <h4 className="section_subtitle text-white my-3">Hair cut</h4>
+                </div>
+                <div className="card_body">
+                  <p className="card_para">
+                    Engrossed listening. Park gate sell they west hard for the.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-sm-6 col-md-4 col-lg-3">
+            <div className="col_wrapper">
+              <div className="custom_card text-center">
+                <div className="card_head text-center">
+                  <img
+                    src={require("../../Static/img/satisfaction.png")}
+                    alt="img"
+                  />
+                  <h4 className="section_subtitle text-white my-3">Hair cut</h4>
+                </div>
+                <div className="card_body">
+                  <p className="card_para">
+                    Engrossed listening. Park gate sell they west hard for the.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const Section4 = () => {
+  return (
+    <section id="Section4">
+      <div className="container-fluid"></div>
+    </section>
+  );
+};
+
+const Section5 = () => {
+  return (
+    <section id="Section5">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-12">
+            <div className="section_wrapper text-center">
+              <button className="subscribe_btn">
+                <img src={require('../../Static/img/subscribe_btn.png')} alt="img" />
+              </button>
+              <div className="row justify-content-center">
+                <div className="col-11 col-md-10">
+                  <div className="section_content">
+                    <h4 className="section_subtitle">BOOK APPOINTMENT</h4>
+                    <h2 className="section_title title_23">
+                      Get 20% Discount off your Book
+                    </h2>
+
+                    <p className="para para_section">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Urna, tortor tempus. Urna, tortor tempus. Urna, tortor
+                      tempus.Urna, tortor tempus.Urna, tortor tempus. Lorem
+                      ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                      tortor tempus. Urna, tortor tempus. Urna, tortor
+                      tempus.Urna, tortor tempus.Urna, tortor tempus
+                    </p>
+
+                    <div className="text-center">
+                      <button className="btn btn-light shadow-0">
+                        Book Appointment
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

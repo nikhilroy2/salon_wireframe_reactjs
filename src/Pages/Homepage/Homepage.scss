@@ -26,4 +26,53 @@
       }
     }
   }
+  #Section3 {
+    margin-top: 61px;
+    .custom_card {
+      padding: 28px 25px;
+      border-radius: 8.04px;
+      transition: 0.5s;
+      &:hover {
+        background: #b6b6b6;
+        .card_para {
+          color: #e2e2e2 !important;
+        }
+      }
+      .card_body {
+        .card_para {
+          color: #acaba9;
+          font-size: 9.46px;
+        }
+      }
+    }
+  }
+  #Section4 {
+  }
+  #Section5 {
+    padding-top: 118px;
+    padding-bottom: 100px;
+    .section_wrapper {
+      background: url("../../Static/img/discount_bg.png") center / 100% 100%
+        no-repeat;
+      min-height: 256.21px;
+      position: relative;
+      .subscribe_btn {
+        position: absolute;
+        right: 20px;
+        top: -10px;
+        background: transparent;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+      }
+      .section_content {
+        padding: 40px 20px;
+        .para_section {
+          color: #d9d9d9;
+          font-size: 11px;
+        }
+      }
+    }
+  }
 }

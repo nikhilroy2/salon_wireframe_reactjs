@@ -47,6 +47,13 @@ button {
 }
 h2.section_title {
   font-size: 33px;
+  &.title_23 {
+    font-size: 23px;
+  }
+}
+h4.section_subtitle {
+  font-size: 9.46px;
+  color: #c0c0c0;
 }
 p.para {
   font-size: 13px;
