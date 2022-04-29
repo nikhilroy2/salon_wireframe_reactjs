@@ -1,0 +1,38 @@
+// ............................Global Settings ....................
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --text-dark: #242736;
+  --text-white: #fff;
+  --text-light: #e8eef2;
+}
+body,
+html,
+main {
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 881px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--text-light);
+  .App {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--text-dark);
+    border-radius: 16px;
+    padding-left: 88px;
+    padding-right: 88px;
+  }
+}
+
+ul,ol{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+// ............................Global Settings ....................End

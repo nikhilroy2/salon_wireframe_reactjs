@@ -1,0 +1,16 @@
+header#Header {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav_list {
+      display: flex;
+      align-items: center;
+      a,
+      button {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
