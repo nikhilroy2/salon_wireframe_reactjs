@@ -3,13 +3,29 @@ header#Header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 0px;
     .nav_list {
       display: flex;
       align-items: center;
+      li {
+        padding-right: 25px;
+        &:last-child {
+          padding-right: 0px;
+        }
+      }
       a,
       button {
         color: #fff;
         text-decoration: none;
+      }
+      .connect_btn {
+        width: 100px;
+        height: 35px;
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+        display: inline-block;
+        background: transparent;
+        cursor: pointer;
       }
     }
   }

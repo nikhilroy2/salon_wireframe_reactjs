@@ -8,6 +8,7 @@ header#Header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px 0px;
 }
 
 header#Header nav .nav_list {
@@ -19,9 +20,27 @@ header#Header nav .nav_list {
           align-items: center;
 }
 
+header#Header nav .nav_list li {
+  padding-right: 25px;
+}
+
+header#Header nav .nav_list li:last-child {
+  padding-right: 0px;
+}
+
 header#Header nav .nav_list a,
 header#Header nav .nav_list button {
   color: #fff;
   text-decoration: none;
+}
+
+header#Header nav .nav_list .connect_btn {
+  width: 100px;
+  height: 35px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  display: inline-block;
+  background: transparent;
+  cursor: pointer;
 }
 /*# sourceMappingURL=Header.css.map */

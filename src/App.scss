@@ -1,7 +1,12 @@
 // ............................Global Settings ....................
 
+// font-family: 'League Spartan', sans-serif;
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Volkhov', serif;
+
 * {
   box-sizing: border-box;
+  font-family: "Volkhov", serif;
 }
 
 :root {
@@ -30,7 +35,8 @@ body {
   }
 }
 
-ul,ol{
+ul,
+ol {
   list-style: none;
   margin: 0;
   padding: 0;
