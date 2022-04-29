@@ -41,6 +41,10 @@ ol {
   margin: 0;
   padding: 0;
 }
+button {
+  text-transform: capitalize !important;
+  font-family: "Poppins", sans-serif;
+}
 h2.section_title {
   font-size: 33px;
 }
@@ -49,5 +53,17 @@ p.para {
   &.para_top {
     margin-top: 52px;
   }
+  &.para_sm_c {
+    font-size: 10px;
+    color: #c0c0c0;
+  }
 }
+
 // ............................Global Settings ....................End
+
+// custom button classes styles ..........
+
+.btn-light {
+  background: #747474;
+  color: #e8eef2;
+}

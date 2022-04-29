@@ -1,0 +1,29 @@
+#Homepage {
+  #Section1 {
+    margin-top: 37px;
+    .watch_btn {
+      display: inline-block;
+      cursor: pointer;
+      .watch_box {
+        display: inline-block;
+        $s: 33px;
+        width: $s;
+        height: $s;
+        background: #c4c4c4;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  #Section2 {
+    margin-top: 95px;
+    .contract_list {
+      font-size: 11.35px;
+      li {
+        margin-bottom: 12px;
+        font-family: "Poppins", sans-serif;
+      }
+    }
+  }
+}
