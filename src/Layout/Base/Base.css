@@ -1,1 +1,10 @@
-/* No CSS *//*# sourceMappingURL=Base.css.map */
+#Base {
+  position: relative;
+}
+
+#Base .social_fixed_control {
+  top: 50vh;
+  margin-left: -50px;
+  position: fixed;
+}
+/*# sourceMappingURL=Base.css.map */
