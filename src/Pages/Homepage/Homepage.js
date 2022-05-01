@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -10,7 +9,7 @@ import "swiper/css/navigation";
 import "./custom_swiper.css";
 
 // import required modules
-import { Pagination, Navigation } from "swiper";
+import SwiperCore,{ Pagination, Navigation, Autoplay } from "swiper";
 
 // Homepage css
 import "./Homepage.css";
@@ -30,13 +29,17 @@ function Homepage(props) {
 export default Homepage;
 
 const Section1 = () => {
+  SwiperCore.use([Autoplay])
+
   return (
     <section id="Section1">
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-6 align-self-end">
             <div className="col_wrapper">
-              <h2 className="section_title">We are guarantee 100%.</h2>
+              <h2 className="section_title">
+                We are <br /> guarantee 100%.
+              </h2>
               <p className="para para_top">
                 You can make a contract by click bellow Create a contract
                 button.
@@ -57,7 +60,26 @@ const Section1 = () => {
           </div>
           <div className="col-md-6">
             <div className="col_wrapper">
-              <img src={require("../../Static/img/we_are_img.png")} alt="img" />
+              <Swiper className="mySwiper" autoplay={{ delay: 3000 }}>
+                <SwiperSlide>
+                  <img
+                    src={require("../../Static/img/we_are_img.png")}
+                    alt="img"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={require("../../Static/img/we_are_img.png")}
+                    alt="img"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={require("../../Static/img/we_are_img.png")}
+                    alt="img"
+                  />
+                </SwiperSlide>
+              </Swiper>
             </div>
           </div>
         </div>
@@ -216,10 +238,10 @@ const Section4 = () => {
                 navigation={true}
                 modules={[Navigation, Pagination]}
                 pagination={{
-                  el: '.about_us_custom_pagination',
+                  el: ".about_us_custom_pagination",
                   clickable: true,
                   renderBullet: (index, className) => {
-                   return '<span class="' + className + '">' + "</span>";
+                    return '<span class="' + className + '">' + "</span>";
                   },
                 }}
                 onSlideChange={() => console.log("slide change")}
@@ -277,7 +299,6 @@ const Section4 = () => {
                   </div>
                 </SwiperSlide>
 
-
                 <SwiperSlide>
                   {" "}
                   <div className="about_contact_wrapper">
@@ -305,8 +326,6 @@ const Section4 = () => {
                 </SwiperSlide>
               </Swiper>
             </div>
-
-
           </div>
         </div>
       </div>
