@@ -10,7 +10,7 @@ function Header(props) {
 
         <ul className="nav_list">
           <li>
-            <a href="#">About Us</a>
+            <a href="#Section4">About Us</a>
           </li>
 
           <li>
