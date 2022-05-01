@@ -1,3 +1,7 @@
+#ContactModal #contactModalView {
+  padding-right: 0px !important;
+}
+
 #ContactModal .modal-content {
   max-width: 400px;
   background: #161c2c;

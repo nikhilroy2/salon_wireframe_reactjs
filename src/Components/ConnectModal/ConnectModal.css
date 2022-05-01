@@ -1,3 +1,7 @@
+#ConnectModal #connectModalView {
+  padding-right: 0px !important;
+}
+
 #ConnectModal .modal-content {
   width: 448px;
   background: #161c2c;
