@@ -1,4 +1,18 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import "./custom_swiper.css";
+
+// import required modules
+import { Pagination, Navigation } from "swiper";
+
+// Homepage css
 import "./Homepage.css";
 function Homepage(props) {
   return (
@@ -188,7 +202,114 @@ const Section3 = () => {
 const Section4 = () => {
   return (
     <section id="Section4">
-      <div className="container-fluid"></div>
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-md-5">
+            <h2 className="section_title">About Us</h2>
+            <div className="about_us_custom_pagination"></div>
+          </div>
+          <div className="col-md-7">
+            <div className="swiper_wrapper">
+              <Swiper
+                spaceBetween={50}
+                slidesPerView={1}
+                navigation={true}
+                modules={[Navigation, Pagination]}
+                pagination={{
+                  el: '.about_us_custom_pagination',
+                  clickable: true,
+                  renderBullet: (index, className) => {
+                   return '<span class="' + className + '">' + "</span>";
+                  },
+                }}
+                onSlideChange={() => console.log("slide change")}
+                onSwiper={(swiper) => console.log(swiper)}
+              >
+                <SwiperSlide>
+                  {" "}
+                  <div className="about_contact_wrapper">
+                    <img
+                      className="satisfaction"
+                      src={require("../../Static/img/satisfaction.png")}
+                      alt="img"
+                    />
+                    <p className="para">
+                      “I Found the ‘Shop Name’ about 5 years ago. My hairs was
+                      fine,flat frizzed with split ends. He has transformed ny
+                      hair through the products and cut into a vibrant ,
+                      healthy-looking style that bridge compliments”
+                    </p>
+
+                    <div className="user_details">
+                      <strong className="d-block">Mike taylor</strong>
+                      <span>India</span>
+                    </div>
+                    <div className="after_details">
+                      <strong className="d-block">Chris Thomas</strong>
+                      <span>India</span>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  {" "}
+                  <div className="about_contact_wrapper">
+                    <img
+                      className="satisfaction"
+                      src={require("../../Static/img/satisfaction.png")}
+                      alt="img"
+                    />
+                    <p className="para">
+                      “I Found the ‘Shop Name’ about 5 years ago. My hairs was
+                      fine,flat frizzed with split ends. He has transformed ny
+                      hair through the products and cut into a vibrant ,
+                      healthy-looking style that bridge compliments”
+                    </p>
+
+                    <div className="user_details">
+                      <strong className="d-block">Mike taylor</strong>
+                      <span>India</span>
+                    </div>
+                    <div className="after_details">
+                      <strong className="d-block">Chris Thomas</strong>
+                      <span>India</span>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+
+                <SwiperSlide>
+                  {" "}
+                  <div className="about_contact_wrapper">
+                    <img
+                      className="satisfaction"
+                      src={require("../../Static/img/satisfaction.png")}
+                      alt="img"
+                    />
+                    <p className="para">
+                      “I Found the ‘Shop Name’ about 5 years ago. My hairs was
+                      fine,flat frizzed with split ends. He has transformed ny
+                      hair through the products and cut into a vibrant ,
+                      healthy-looking style that bridge compliments”
+                    </p>
+
+                    <div className="user_details">
+                      <strong className="d-block">Mike taylor</strong>
+                      <span>India</span>
+                    </div>
+                    <div className="after_details">
+                      <strong className="d-block">Chris Thomas</strong>
+                      <span>India</span>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
@@ -201,7 +322,10 @@ const Section5 = () => {
           <div className="col-12">
             <div className="section_wrapper text-center">
               <button className="subscribe_btn">
-                <img src={require('../../Static/img/subscribe_btn.png')} alt="img" />
+                <img
+                  src={require("../../Static/img/subscribe_btn.png")}
+                  alt="img"
+                />
               </button>
               <div className="row justify-content-center">
                 <div className="col-11 col-md-10">

@@ -1,0 +1,48 @@
+.swiper_wrapper {
+  overflow: hidden;
+  height: 252.73px;
+  margin-top: -80px;
+  margin-left: -40px;
+  .swiper {
+    overflow: visible;
+  }
+
+  .swiper-slide {
+    top: 41px;
+  }
+  .swiper-button-next {
+    &::after {
+      font-size: 16px;
+      position: absolute;
+      top: 180%;
+      right: 0px;
+      transform: rotate(90deg);
+      color: white;
+    }
+  }
+
+  .swiper-button-prev {
+    left: auto;
+    right: 0px;
+
+    &:after {
+      font-size: 16px;
+      position: absolute;
+      transform: rotate(90deg);
+      color: white;
+      top: 100%;
+      right: 10px;
+    }
+  }
+}
+
+.about_us_custom_pagination {
+  margin-top: 52px;
+  // pagination bullet point style outside globe style
+  .swiper-pagination-bullet {
+    background: #bdbdbd !important;
+    &.swiper-pagination-bullet-active {
+      background: #ffffff;
+    }
+  }
+}

@@ -60,6 +60,94 @@
   font-size: 9.46px;
 }
 
+#Homepage #Section4 {
+  margin-top: 90px;
+  font-family: "Poppins", sans-serif;
+}
+
+#Homepage #Section4 .about_contact_wrapper {
+  position: relative;
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
+  padding: 19px 18px;
+  width: 317.28px;
+  height: 154.23px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 62.9517px 50.3614px rgba(0, 0, 0, 0.02), 0px 40.802px 29.4941px rgba(0, 0, 0, 0.0151852), 0px 24.2481px 16.041px rgba(0, 0, 0, 0.0121481), 0px 12.5903px 8.18372px rgba(0, 0, 0, 0.01), 0px 5.1294px 4.10352px rgba(0, 0, 0, 0.00785185), 0px 1.16577px 1.98181px rgba(0, 0, 0, 0.00481481);
+          box-shadow: 0px 62.9517px 50.3614px rgba(0, 0, 0, 0.02), 0px 40.802px 29.4941px rgba(0, 0, 0, 0.0151852), 0px 24.2481px 16.041px rgba(0, 0, 0, 0.0121481), 0px 12.5903px 8.18372px rgba(0, 0, 0, 0.01), 0px 5.1294px 4.10352px rgba(0, 0, 0, 0.00785185), 0px 1.16577px 1.98181px rgba(0, 0, 0, 0.00481481);
+  border-radius: 6.29517px;
+}
+
+#Homepage #Section4 .about_contact_wrapper .satisfaction {
+  position: absolute;
+  top: -39px;
+  left: -28px;
+}
+
+#Homepage #Section4 .about_contact_wrapper .para {
+  font-weight: 500;
+  font-size: 8.51623px;
+  line-height: 195%;
+  color: #2e2f34;
+  margin-bottom: 11px;
+}
+
+#Homepage #Section4 .about_contact_wrapper .user_details strong {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11.3313px;
+  line-height: 17px;
+  color: #18181d;
+  margin-bottom: 0px;
+}
+
+#Homepage #Section4 .about_contact_wrapper .user_details span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8.81324px;
+  line-height: 13px;
+  color: #2e2f34;
+}
+
+#Homepage #Section4 .about_contact_wrapper .after_details {
+  width: 316.02px;
+  height: 146.05px;
+  position: absolute;
+  bottom: -48px;
+  right: -26px;
+  border: 1.25903px solid #f7f7f7;
+  -webkit-filter: drop-shadow(0px 62.9517px 50.3614px rgba(0, 0, 0, 0.02)) drop-shadow(0px 40.802px 29.4941px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 24.2481px 16.041px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 12.5903px 8.18372px rgba(0, 0, 0, 0.01)) drop-shadow(0px 5.1294px 4.10352px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.16577px 1.98181px rgba(0, 0, 0, 0.00481481));
+          filter: drop-shadow(0px 62.9517px 50.3614px rgba(0, 0, 0, 0.02)) drop-shadow(0px 40.802px 29.4941px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 24.2481px 16.041px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 12.5903px 8.18372px rgba(0, 0, 0, 0.01)) drop-shadow(0px 5.1294px 4.10352px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.16577px 1.98181px rgba(0, 0, 0, 0.00481481));
+  border-radius: 6.29517px;
+  padding: 13px 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#Homepage #Section4 .about_contact_wrapper .after_details strong {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11.3313px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+#Homepage #Section4 .about_contact_wrapper .after_details span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8.81324px;
+  line-height: 13px;
+  color: #c4c4c4;
+}
+
 #Homepage #Section5 {
   padding-top: 118px;
   padding-bottom: 100px;
