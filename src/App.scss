@@ -4,6 +4,19 @@
 // font-family: 'Poppins', sans-serif;
 // font-family: 'Volkhov', serif;
 
+//custom input arrow hidden
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Volkhov", serif;
@@ -24,6 +37,8 @@ body {
   max-width: 881px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0!important; // important for modal scroll
+  overflow: visible!important; // important for modal scroll
   color: var(--text-light);
   .App {
     width: 100%;

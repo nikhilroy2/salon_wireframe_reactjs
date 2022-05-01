@@ -1,0 +1,20 @@
+#ConnectModal .modal-content {
+  width: 448px;
+  background: #161c2c;
+  border-radius: 20px;
+}
+
+#ConnectModal .modal-content .connect_btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+#ConnectModal .modal-content .connect_btn img {
+  width: 102px;
+  height: 102px;
+  display: inline-block;
+}
+/*# sourceMappingURL=ConnectModal.css.map */

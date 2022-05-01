@@ -9,8 +9,12 @@ import "swiper/css/navigation";
 import "./custom_swiper.css";
 
 // import required modules
-import SwiperCore,{ Pagination, Navigation, Autoplay } from "swiper";
+import SwiperCore, { Pagination, Navigation, Autoplay } from "swiper";
 
+// components
+
+import ContactModal from "../../Components/ContactModal/ContactModal";
+import ConnectModal from "../../Components/ConnectModal/ConnectModal";
 // Homepage css
 import "./Homepage.css";
 function Homepage(props) {
@@ -20,8 +24,11 @@ function Homepage(props) {
       <Section2></Section2>
       <Section3></Section3>
       <Section4></Section4>
-
       <Section5></Section5>
+
+      <ContactModal></ContactModal>
+      <ConnectModal></ConnectModal>
+      {/* modal component */}
     </div>
   );
 }
@@ -29,7 +36,7 @@ function Homepage(props) {
 export default Homepage;
 
 const Section1 = () => {
-  SwiperCore.use([Autoplay])
+  SwiperCore.use([Autoplay]);
 
   return (
     <section id="Section1">

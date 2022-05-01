@@ -1,5 +1,5 @@
 import React from "react";
-import './Header.css';
+import "./Header.css";
 function Header(props) {
   return (
     <header id="Header">
@@ -14,11 +14,23 @@ function Header(props) {
           </li>
 
           <li>
-            <a href="#">Contact Us</a>
+            <a
+              href="#"
+              data-mdb-toggle="modal"
+              data-mdb-target="#contactModalView"
+            >
+              Contact Us
+            </a>
           </li>
 
           <li>
-            <button className="connect_btn">Connect</button>
+            <button
+              className="connect_btn"
+              data-mdb-target="#connectModalView"
+              data-mdb-toggle="modal"
+            >
+              Connect
+            </button>
           </li>
         </ul>
       </nav>

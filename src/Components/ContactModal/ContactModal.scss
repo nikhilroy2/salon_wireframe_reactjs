@@ -1,0 +1,72 @@
+#ContactModal {
+  .modal-content {
+    width: 400px;
+    background: #161c2c;
+    border-radius: 20px;
+    padding: 40px 25px;
+    .form-group {
+      margin-bottom: 20px;
+      position: relative;
+      input {
+        background: #222c44;
+        border-radius: 129px;
+        width: 100%;
+        border: none;
+        outline: none;
+
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.22);
+        padding: 12px 19px;
+        display: inline-block;
+        &::placeholder {
+          color: inherit;
+        }
+      }
+      .date_img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px;
+        pointer-events: none;
+      }
+    }
+
+    .modal_table_wrapper {
+      table {
+        width: 316px;
+        text-align: center;
+        thead {
+          font-size: 7px;
+          color: #fff;
+          th {
+            border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+          }
+        }
+        tbody {
+          tr {
+            color: #0094ff;
+            font-size: 7px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            .btn_action {
+              width: 30px;
+              height: 18px;
+              background: linear-gradient(
+                  0deg,
+                  rgba(0, 0, 0, 0.2),
+                  rgba(0, 0, 0, 0.2)
+                ),
+                linear-gradient(180deg, #0094ff 0%, #0063ab 100%);
+              border-radius: 43px;
+
+              font-size: 6px;
+              color: #ffffff;
+              border: none;
+              outline: none;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
