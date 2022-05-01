@@ -2,6 +2,7 @@
   width: 448px;
   background: #161c2c;
   border-radius: 20px;
+  margin: auto;
 }
 
 #ConnectModal .modal-content .connect_btn {
@@ -16,5 +17,12 @@
   width: 102px;
   height: 102px;
   display: inline-block;
+}
+
+@media (max-width: 600px) {
+  #ConnectModal .modal-content .connect_btn img {
+    width: 70px;
+    height: 70px;
+  }
 }
 /*# sourceMappingURL=ConnectModal.css.map */

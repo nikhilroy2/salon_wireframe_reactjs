@@ -3,6 +3,7 @@
     width: 448px;
     background: #161c2c;
     border-radius: 20px;
+    margin: auto;
     .connect_btn {
       background-color: transparent;
       border: none;
@@ -14,6 +15,10 @@
         width: $s;
         height: $s;
         display: inline-block;
+        @media (max-width: 600px) {
+          width: 70px;
+          height: 70px;
+        }
       }
     }
   }

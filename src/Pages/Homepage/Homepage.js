@@ -42,7 +42,7 @@ const Section1 = () => {
     <section id="Section1">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-6 align-self-end">
+          <div className="col-md-5 align-self-end mb-3 mb-md-0 text-center text-md-start">
             <div className="col_wrapper">
               <h2 className="section_title">
                 We are <br /> guarantee 100%.
@@ -51,11 +51,13 @@ const Section1 = () => {
                 You can make a contract by click bellow Create a contract
                 button.
               </p>
-              <div className="btn_control d-flex align-items-center">
-                <button className="btn btn-light">Create a contract</button>
+              <div className="btn_control d-flex justify-content-center justify-content-md-start align-items-center flex-wrap flex-md-nowrap">
+                <button className="btn btn-light rounded_4 text-nowrap font_sm_size px-3 mb-3">
+                  Create a contract
+                </button>
                 <button
-                  data-mdb-ripple-duration="0"
-                  className="watch_btn btn btn-muted shadow-0  text-white"
+                  data-mdb-ripple-duration={String(0)}
+                  className="watch_btn btn btn-muted shadow-0 py-0 text-white text-nowrap font_sm_size mb-3"
                 >
                   <span className="watch_box rounded-circle me-2">
                     <i className="fab fa-youtube    text-danger"></i>
@@ -65,23 +67,31 @@ const Section1 = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-7 mb-3 mb-md-0">
             <div className="col_wrapper">
-              <Swiper className="mySwiper" autoplay={{ delay: 3000 }}>
-                <SwiperSlide>
+              <Swiper
+                className="mySwiper"
+                autoplay={{ delay: 3000 }}
+                spaceBetween={0}
+                slidesPerView={1}
+              >
+                <SwiperSlide className="d-flex justify-content-center justify-content-md-start">
                   <img
+                    className="we_are_img"
                     src={require("../../Static/img/we_are_img.png")}
                     alt="img"
                   />
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className="d-flex justify-content-center justify-content-md-start">
                   <img
+                    className="we_are_img"
                     src={require("../../Static/img/we_are_img.png")}
                     alt="img"
                   />
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className="d-flex justify-content-center justify-content-md-start">
                   <img
+                    className="we_are_img"
                     src={require("../../Static/img/we_are_img.png")}
                     alt="img"
                   />
@@ -100,16 +110,16 @@ const Section2 = () => {
     <section id="Section2">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-6 align-self-center">
+          <div className="col-md-6 text-center text-md-start align-self-center">
             <div className="col_wrapper">
-              <img
+              <img className="contract_img"
                 src={require("../../Static/img/contract_img.png")}
                 alt="img"
               />
             </div>
           </div>
 
-          <div className="col-md-6 ">
+          <div className="col-md-6 text-center text-md-start ">
             <div className="col_wrapper">
               <p className="para para_sm_c">Owner: 0x0983...098</p>
               <h2 className="section_title">Contract 1 for you.</h2>
@@ -233,9 +243,9 @@ const Section4 = () => {
     <section id="Section4">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-5">
+          <div className="col-md-5 text-center text-md-start mb-5">
             <h2 className="section_title">About Us</h2>
-            <div className="about_us_custom_pagination"></div>
+            <div className="about_us_custom_pagination "></div>
           </div>
           <div className="col-md-7">
             <div className="swiper_wrapper">
@@ -256,7 +266,7 @@ const Section4 = () => {
               >
                 <SwiperSlide>
                   {" "}
-                  <div className="about_contact_wrapper">
+                  <div className="about_contact_wrapper mr-auto ml-0 mx-sm-auto mx-md-0">
                     <img
                       className="satisfaction"
                       src={require("../../Static/img/satisfaction.png")}
@@ -282,7 +292,7 @@ const Section4 = () => {
 
                 <SwiperSlide>
                   {" "}
-                  <div className="about_contact_wrapper">
+                  <div className="about_contact_wrapper mr-auto ml-0 mx-sm-auto mx-md-0">
                     <img
                       className="satisfaction"
                       src={require("../../Static/img/satisfaction.png")}
@@ -308,7 +318,7 @@ const Section4 = () => {
 
                 <SwiperSlide>
                   {" "}
-                  <div className="about_contact_wrapper">
+                  <div className="about_contact_wrapper mr-auto ml-0 mx-sm-auto mx-md-0">
                     <img
                       className="satisfaction"
                       src={require("../../Static/img/satisfaction.png")}
@@ -331,9 +341,12 @@ const Section4 = () => {
                     </div>
                   </div>
                 </SwiperSlide>
+               
               </Swiper>
             </div>
           </div>
+
+         
         </div>
       </div>
     </section>

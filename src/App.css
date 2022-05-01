@@ -36,15 +36,30 @@ body {
   padding: 0 !important;
   overflow: visible !important;
   color: var(--text-light);
+  background: var(--text-dark);
 }
 
 body .App {
   width: 100%;
   min-height: 100vh;
   background: var(--text-dark);
-  border-radius: 16px;
   padding-left: 88px;
   padding-right: 88px;
+}
+
+@media (max-width: 900px) {
+  body .App {
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  body .App {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 ul,
@@ -63,6 +78,12 @@ h2.section_title {
   font-size: 33px;
 }
 
+@media (max-width: 600px) {
+  h2.section_title {
+    font-size: 25px;
+  }
+}
+
 h2.section_title.title_23 {
   font-size: 23px;
 }
@@ -77,12 +98,20 @@ p.para {
 }
 
 p.para.para_top {
-  margin-top: 52px;
+  margin-top: 35px;
 }
 
 p.para.para_sm_c {
   font-size: 10px;
   color: #c0c0c0;
+}
+
+.rounded_4 {
+  border-radius: 4.73px;
+}
+
+.font_sm_size {
+  font-size: 10px;
 }
 
 .btn-light {

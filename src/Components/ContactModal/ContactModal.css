@@ -1,8 +1,15 @@
 #ContactModal .modal-content {
-  width: 400px;
+  max-width: 400px;
   background: #161c2c;
   border-radius: 20px;
   padding: 40px 25px;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  #ContactModal .modal-content {
+    padding: 30px 15px;
+  }
 }
 
 #ContactModal .modal-content .form-group {
@@ -20,6 +27,13 @@
   color: rgba(255, 255, 255, 0.22);
   padding: 12px 19px;
   display: inline-block;
+}
+
+@media (max-width: 600px) {
+  #ContactModal .modal-content .form-group input {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
 }
 
 #ContactModal .modal-content .form-group input::-webkit-input-placeholder {
@@ -47,8 +61,12 @@
   pointer-events: none;
 }
 
+#ContactModal .modal-content .modal_table_wrapper {
+  overflow: auto;
+}
+
 #ContactModal .modal-content .modal_table_wrapper table {
-  width: 316px;
+  max-width: 316px;
   text-align: center;
 }
 
@@ -59,9 +77,11 @@
 
 #ContactModal .modal-content .modal_table_wrapper table thead th {
   border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+  white-space: nowrap;
 }
 
 #ContactModal .modal-content .modal_table_wrapper table tbody tr {
+  white-space: nowrap;
   color: #0094ff;
   font-size: 7px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);

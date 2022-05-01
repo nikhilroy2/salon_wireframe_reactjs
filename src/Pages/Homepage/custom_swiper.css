@@ -5,12 +5,24 @@
   margin-left: -40px;
 }
 
+@media (max-width: 600px) {
+  .swiper_wrapper {
+    margin-left: -5px;
+  }
+}
+
 .swiper_wrapper .swiper {
   overflow: visible;
 }
 
 .swiper_wrapper .swiper-slide {
   top: 41px;
+}
+
+@media (max-width: 360px) {
+  .swiper_wrapper .swiper-button-next {
+    display: none;
+  }
 }
 
 .swiper_wrapper .swiper-button-next::after {
@@ -28,6 +40,12 @@
   right: 0px;
 }
 
+@media (max-width: 360px) {
+  .swiper_wrapper .swiper-button-prev {
+    display: none;
+  }
+}
+
 .swiper_wrapper .swiper-button-prev:after {
   font-size: 16px;
   position: absolute;
@@ -40,6 +58,13 @@
 
 .about_us_custom_pagination {
   margin-top: 52px;
+}
+
+@media (max-width: 767px) {
+  .about_us_custom_pagination {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .about_us_custom_pagination .swiper-pagination-bullet {

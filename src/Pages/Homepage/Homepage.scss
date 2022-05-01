@@ -1,6 +1,9 @@
 #Homepage {
   #Section1 {
     margin-top: 37px;
+    @media (max-width: 600px) {
+      margin-top: 20px;
+    }
     .watch_btn {
       display: inline-block;
       cursor: pointer;
@@ -15,14 +18,30 @@
         align-items: center;
       }
     }
+    .we_are_img {
+      @media (max-width: 400px) {
+        width: 100%;
+      }
+    }
   }
   #Section2 {
     margin-top: 95px;
+    @media (max-width: 900px) {
+      margin-top: 50px;
+    }
+    @media (max-width: 600px) {
+      margin-top: 25px;
+    }
     .contract_list {
       font-size: 11.35px;
       li {
         margin-bottom: 12px;
         font-family: "Poppins", sans-serif;
+      }
+    }
+    .contract_img {
+      @media (max-width: 400px) {
+        width: 100%;
       }
     }
   }
@@ -55,6 +74,10 @@
       padding: 19px 18px;
       width: 317.28px;
       height: 154.23px;
+      @media (max-width: 600px) {
+        width: 210.28px;
+        height: 154.23px;
+      }
       background: #ffffff;
       box-shadow: 0px 62.9517px 50.3614px rgba(0, 0, 0, 0.02),
         0px 40.802px 29.4941px rgba(0, 0, 0, 0.0151852),
@@ -99,6 +122,10 @@
         bottom: -48px;
         right: -26px;
         border: 1.25903px solid #f7f7f7;
+        @media (max-width: 600px) {
+          width: 220.28px;
+          height: 120.05px;
+        }
         filter: drop-shadow(0px 62.9517px 50.3614px rgba(0, 0, 0, 0.02))
           drop-shadow(0px 40.802px 29.4941px rgba(0, 0, 0, 0.0151852))
           drop-shadow(0px 24.2481px 16.041px rgba(0, 0, 0, 0.0121481))
