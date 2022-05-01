@@ -4,5 +4,17 @@
     top: 50vh;
     margin-left: -50px;
     position: fixed;
+    z-index: 10;
+    background: #242736;
+    padding: 10px;
+    border-radius: 25px;
+    @media (max-width: 900px){
+      margin-left: -20px;
+    }
+
+    @media (max-width: 600px){
+      margin-left: 0px;
+    }
+
   }
 }
