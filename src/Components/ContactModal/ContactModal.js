@@ -9,6 +9,13 @@ function ContactModal(props) {
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
 
+  const closeModal = () => {
+    setTimeout(()=> {
+
+      document.querySelector('.my_close_modal').click()
+
+    }, 5000) // close after 5second
+  };
   return (
     <div id="ContactModal">
       {/* Modal */}
@@ -137,6 +144,15 @@ function ContactModal(props) {
                   </tbody>
                 </table>
               </div>
+            </div>
+            <div className="modal-footer">
+              <button className="btn btn-primary" onClick={() => closeModal()}>
+                {" "}
+                Close after few second
+              </button>
+              <button className="btn my_close_modal d-none" data-mdb-dismiss="modal">
+                Close by click11
+              </button>
             </div>
           </div>
         </div>
